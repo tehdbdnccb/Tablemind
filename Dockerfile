@@ -10,9 +10,7 @@ COPY tablemind /app/tablemind
 COPY web /app/web
 COPY mujoco /app/mujoco
 COPY configs /app/configs
-COPY benchmarks /app/benchmarks
 COPY scripts /app/scripts
-COPY outputs /app/outputs
 
 RUN pip install --upgrade pip && pip install ".[api]"
 
